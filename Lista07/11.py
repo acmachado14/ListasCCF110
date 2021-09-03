@@ -43,17 +43,3 @@ for i in range(n):
 
 for i in range(n):
     print(A[i])
-
-while n > 1000:
-    n = int(input())
-
-for i in range(n):
-    A.append(int(input()))
-
-for i in range(n):
-    aux = 0
-    for j in range(n-1):
-        if A[j] > A[j+1]:
-            aux = A[j]
-            A[j] = A[j+1]
-            A[j+1] = aux
