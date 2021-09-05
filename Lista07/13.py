@@ -47,3 +47,4 @@ if posicao == -10:
     print("Nao exite o numero X em A[]")
 else:
     print(f"A posição de B correspondente correspondente à do elemento de A igual a X é: {B[posicao]}")
+    
