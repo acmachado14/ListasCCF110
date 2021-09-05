@@ -1,4 +1,8 @@
-#11
+#11. Fazer um algoritmo que:
+#a)Leia o valor inteiro de n (n ≤ 1000) e os n valores de um vetor A de valores numéricos, ordenados de forma crescente;
+#b)Determine e escreva, para cada número que se repete no conjunto, a quantidade de vezes em que ele aparece repetido;
+#c)Elimine os elementos repetidos, formando um novo conjunto;
+#d)Escreva o conjunto obtido.
 
 #a)
 A = []
