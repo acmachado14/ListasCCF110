@@ -7,9 +7,8 @@ for i in range(len(matriz)):
     for j in range(len(matriz[i])):
         matriz[i][j] = int(input(f"Digite o valor para o índice ({i+1},{j+1}): "))
 
-#Diagonal principal é quando os i for igual a j, exemplo: 1,1 2,2 3,3 ....
+#A cima da diagonal principal é quando os i for uma unidade maior que os j, exemplo: 1,0 2,1 3,2 ....
 for i in range(len(matriz)):
     for j in range(len(matriz[i])):
-        if i == j:
+        if (i - j) == 1:
             print(matriz[i][j])
-
