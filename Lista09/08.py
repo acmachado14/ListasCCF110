@@ -2,7 +2,7 @@
 #M[10x10] e escrevê-la. Troque, na ordem a seguir:
 #   ● A segunda linha pela oitava linha;
 #   ● A quarta coluna pela décima coluna;
-#   ● A diagonal principal pela diagonal secundária
+#   ● A diagonal principal pela diagonal secundária;
 
 matriz = [[0 for j in range(10)] for i in range(10)]
 
