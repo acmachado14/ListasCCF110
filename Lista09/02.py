@@ -10,6 +10,6 @@ for i in range(len(matriz)):
 #Diagonal principal é quando os i for igual a j, exemplo: 1,1 2,2 3,3 ....
 for i in range(len(matriz)):
     for j in range(len(matriz[i])):
-        if i == j:
+        if i < j:
             print(matriz[i][j])
 
