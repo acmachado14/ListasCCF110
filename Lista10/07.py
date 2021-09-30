@@ -13,3 +13,37 @@
 #chegar e removendo aqueles que vão sair da fila. Imprima a fila final, de acordo com
 #ordem de chegada (se a fila for maior que 300, remova os excedentes antes de
 #imprimir a fila).
+
+
+#NAAAAAAAAAAO É MINHA, DIREITOS DO GABRIELL
+
+lista_alunos = []
+nova_lista = []
+for y in range(300):
+  matrícula = int(input('Insira sua matrícula: '))
+  lista_alunos.append(matrícula)
+  #Lugar extra
+  q1 = input('''
+  S - Sim
+  N - Não
+  Você vai guarda lugar na fila para mais alguém?
+  ''').upper()
+  if q1 == 'S':
+    #Número de pessoas
+    np = int(input('Para quantas pessoas você vai guardar lugar? '))
+    if np > 3:
+      print('Inválido! O máximo que se pode guardar são 3 lugares.')
+      np = int(input('Para quantas pessoas você vai guardar lugar? '))
+    for x in range(np):
+      lista_alunos.append(0)
+
+#Removendo os extras
+if len(lista_alunos) > 300:
+  for x in range(len(lista_alunos)):
+    num = lista_alunos[x]
+    if num != 0:
+      nova_lista.append(lista_alunos[x])
+else:
+  print(lista_alunos)
+  
+print(nova_lista)
