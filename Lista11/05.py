@@ -15,7 +15,7 @@ for nota in notas:
     soma = 0
     cont = 0
     for x in nota.split():
-        soma = int(x)
+        soma += int(x)
         cont += 1
     medias.append(soma/cont)
 
